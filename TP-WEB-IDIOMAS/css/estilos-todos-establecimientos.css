@@ -1,0 +1,110 @@
+#inicio{
+    background-image:  linear-gradient(0deg, hsla(300, 36%, 77%, 0.4) 0%, hsla(186, 55%, 74%, 0.4) 80%), url(../img/portada-establecimiento.jpg);
+  }
+#opcion0{
+    margin: 1em;
+    text-align: center;
+}
+.contenedor-establecimiento{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenedor-establecimiento article{
+    width: calc(100% - 2em);
+    padding: 2em; 
+    box-sizing: border-box;
+    margin: 3em 0; 
+    box-shadow: rgba(227, 207, 207, 0.4) 0px 0px 26px 7px;
+    border-radius: 1.3em;
+}
+.contenedor-establecimiento  p, h4  {
+    margin-top: 10px;
+}
+.contenedor-establecimiento article div{
+    text-align: center;
+}
+.contenedor-establecimiento a{
+   display: inline-block;
+    text-align: center;
+    margin-top: 2em;
+    text-decoration: none;
+    margin-left: 6em;
+    border: 0.2em solid rgb(142, 124, 255);
+    border-radius: 0.5em;
+    transition: 0.5s;
+    background-color: rgb(142, 124, 255);
+    color: #ffff;
+    font-weight: bold;
+    padding: 0.8em 1.8em;
+}
+.contenedor-establecimiento article a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 1.2em 0.6em rgba(216, 210, 255, 0.2);
+    -webkit-box-shadow:  0 0 1.2em 0.6em rgba(216, 210, 255, 0.2);
+    -moz-box-shadow:  0 0 1.2em 0.6em rgba(216, 210, 255, 0.2);
+    border: 0.2em solid #4e4695;
+    color: #ffffff;
+    background-color: #4e4695;
+}
+.contenedor-establecimiento article h3{
+    text-align: center;
+}
+.contenedor-establecimiento li{
+    list-style: none;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.contenedor-establecimiento li>img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.contenedor-establecimiento article div img{
+   border-radius: 0.5em;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+.contenedor-form{
+    width: 90%;
+    margin: auto;
+    text-align:center;
+    padding: 0.6em;
+    margin-top: 5%;
+}
+.contenedor-form select{
+    display:inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.3em;
+    margin: auto;
+    border: 0.2em solid #87f;
+    border-radius: 0.5em;
+    font-family: 'Nunito';
+    color: #0631a8;
+    font-size: 1em;
+    margin-left: 0.5em;
+}
+@media screen and (min-width: 48em){
+    .contenedor-form select{
+        width: 20%;
+    }
+    .contenedor-establecimiento article{
+        width: calc(50% - 2em);
+    }
+    .contenedor-establecimiento a{
+        padding: 0.8em 2.5em;
+        margin-left: 6em;
+    }
+
+}
+@media screen and (min-width: 60em){
+    .contenedor-establecimiento a{
+        padding: 0.8em 4em;
+        margin-left: 12em;
+    }
+}

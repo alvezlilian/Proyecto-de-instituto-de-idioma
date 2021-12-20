@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Nunito', sans-serif; 
+    color: #0631a8;
+    font-size: 0.9em;
+}
+.header-pf{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 10;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle,rgb(239, 188, 255),rgb(219, 165, 255));
+    color:#ffffff;
+    padding: 2em; 
+}
+.logo{
+    background-image: url(../img/logo.png);
+    width: 5em;
+    height: 1.5em;
+    position: absolute;
+    left: 1.5em;
+    background-size: cover;
+}
+nav{
+    background-color: #fff;
+}
+main{
+    margin-top: 11%;
+}
+header div{
+    box-sizing: border-box;
+}
+header div a{
+    text-decoration: none;
+}
+.menu ul{
+	background-color: #fff;
+}
+.menu ul li{
+    list-style: none;
+    text-align: center;
+    color: #363068;
+}
+.menu ul li a{
+    color: #363068;
+    display: block;
+    padding:10px;
+    text-decoration: none;
+}
+.menu a{
+    transition: 0.3s;
+}
+.menu a:hover{
+    color: #ffffff;
+    background-color: #363068;
+}
+nav.menu{
+    display: none;
+}
+/* fas fa bars*/
+a.desplegable{
+    color: #363068;
+    position: fixed;
+    right: 1.5em;
+    top: 0.75em;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width:48em){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle,rgb(239, 188, 255),rgb(219, 165, 255));
+        color:#ffffff;
+        padding: 3em; 
+    }
+    .logo{
+        width: 7em;
+        height: 2em;
+        left: 1.6em;
+    }
+    a.desplegable{
+       font-size: 2em;
+       right: 1.2em;
+       top: 0.85em;
+    }
+
+}
+
+@media screen and (min-width:60em){
+    body{
+        font-size: 1em; 
+    }
+    .logo{
+        width: 10em;
+        height: 2.9em;
+        display: block;
+        left: 6em;
+    }
+    .menu{
+        display: block;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        box-sizing: border-box;
+        padding: 0.5em 0;
+        position: absolute;
+        right: 1em;
+        top: 0.9em;
+        background-color: transparent;
+    }
+    nav.menu{
+        display: block;
+    }
+    .menu a{
+        color: #0631a8;
+        text-decoration: none;
+        padding: 0.6em 1.3em;
+        font-size: 1.05em;
+        border-radius: 0.3em;
+    }
+   .menu li{
+        padding: 0.1em;
+        margin: 0 0.1em;   
+    }
+    a.desplegable{
+        display: none;
+    }
+    main{
+        margin-top: 7%;
+    }
+    .arriba{
+        width: 3em;
+        height: 3em;
+        border: 0.2em solid #363068;
+        background-color:#363068;
+        display: block;
+        position: fixed;
+        bottom: 2em;
+        right: 1.5em;
+        border-radius: 50%;
+        background-image: url(../img/arriba.png);
+        background-size: cover;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .arriba:hover{
+        transform: scale(1.25);
+        background-color:  #7662ff;
+        border: 0.2em solid #fff;
+    }
+
+}

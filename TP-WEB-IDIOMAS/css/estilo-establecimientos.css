@@ -1,0 +1,138 @@
+#inicio{
+    background-image: linear-gradient(0deg, hsla(300, 36%, 77%, 0.4) 0%, hsla(186, 55%, 74%, 0.4) 80%), url(../img/instituto-buenos-aires.jpg);
+    padding: 15em;
+    background-size: cover; 
+    background-position: top;
+    box-sizing: border-box;
+    position: relative;
+}
+#inicio h2{
+    position: absolute;
+    padding: 0.8em 0;
+    color: #363068;
+    background-color: rgba(255,255,255,0.7);
+    bottom: 2em;
+    left: 0;
+    font-size: 1.8em;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.contenedor-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0;
+    padding: 2em 0;
+    flex-wrap: wrap;  
+}
+.contenedor-info article{
+    box-sizing: border-box;
+    width:calc(50% - 3em);
+    padding: 1em 0;
+}
+.contenedor-info h2{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0.5em 0;
+    font-size: 1.6em;
+}
+.contenedor-info article p{
+    box-sizing: border-box;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+iframe{
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border: 0.2em solid rgb(136, 119, 255);
+    border-radius: 1em;
+}
+.contenedor-cursos{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 1em 0;
+    background-color: coral;
+}
+.contenedor-cursos article{
+    box-sizing: border-box;
+    width: calc(100% - 2em);
+}
+
+@media screen and (min-width: 48em){
+    .contenedor-cursos h2{
+        width: 100%;
+        text-align: center;
+        padding: 0.5em 1.8em;
+        margin: 0.5em 0;
+        font-size: 1.6em;
+    }
+    .contenedor-cursos{
+        margin-top: 3em;
+        margin-bottom: 7em;
+    }
+    .contenedor-cursos article{
+        width: calc(50% - 2.5em);
+        margin-bottom: 1.5em;
+        padding: 1em 0;
+        /*-----------*/
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1em;
+        transition: 0.6s;
+    }
+    .contenedor-cursos article:hover{
+        transform: scale(1.0);
+        box-sizing:border-box;
+        box-shadow: 0 0 1.6em 0.5em rgba(227, 207, 207, 0.4);
+        -webkit-box-shadow: 0 0 1.6em 0.5em  rgba(227, 207, 207, 0.4);
+        -moz-box-shadow: 0 0 1.6em 0.5em  hsla(0, 26%, 85%, 0.4);
+    }
+    .contenedor-cursos div{
+        box-sizing: border-box;
+        width: calc(50% - 2em);
+        padding: 0.5em 0.5em;
+    }
+    .contenedor-cursos li a{
+        text-decoration: none;
+        color: #87f;
+        font-weight: bold;
+    }
+    .contenedor-cursos ul{
+        list-style: none;
+    }
+    .contenedor-cursos div img{
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        border-radius: 0.5em;
+    }
+    .a-inscripcion{
+        display: inline-block;
+        border-radius: 0.5em;
+        padding: 0.7em 0.5em;
+        box-sizing: border-box;
+        background-color: #8e7cff;
+        color: #ffff;
+        font-weight: bold;
+        transition: 0.5s;
+        text-align: center;
+        text-decoration: none;
+        margin:0.6em 0;
+    }
+    .a-inscripcion:hover{
+        color: #ffffff;
+        background-color: #4e4695;
+    }
+}

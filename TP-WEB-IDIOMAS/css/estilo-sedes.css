@@ -1,0 +1,214 @@
+#img-div{
+    position: relative;
+    width: 95%;
+    margin: auto;
+}
+#img-div:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.3em;
+}
+#img-div img{
+    max-width: 100%;
+    max-height: auto;
+    box-sizing: border-box;
+}
+#h2{
+    position: absolute;
+    width: 60%;
+    color: #363068;
+    background-color: rgba(255,255,255,0.9);
+    box-sizing: border-box;
+    top: 23%;
+    left: 0.4em;
+    font-size: 1.4em;
+    text-align: center;
+}
+.contenedor-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+    flex-wrap: wrap;  
+}
+.contenedor-info article{
+    box-sizing: border-box;
+    width:calc(100% - 2em);
+    padding: 1em 0;
+}
+.contenedor-info h2{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0.5em 0;
+    font-size: 1.4em;
+}
+.contenedor-info article p{
+    box-sizing: border-box;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+iframe{
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border: 0.2em solid rgb(136, 119, 255);
+    border-radius: 1em;
+}
+.contenedor-cursos h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 0.2em 1.8em;
+    margin: 0.5em 0;
+}
+.contenedor-cursos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+.contenedor-cursos article{
+    box-sizing: border-box;
+    width: calc(100% - 1.5em);
+    margin-bottom: 1.5em;
+    padding: 1em 0;
+    /*-----------*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+}
+.contenedor-cursos h3{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 0.2em 0;
+    font-size: 1.1em;
+}
+.contenedor-cursos li a{
+    text-decoration: none;
+    color: #87f;
+    font-weight: bold;
+}
+.contenedor-cursos ul{
+    list-style: none;
+}
+.contenedor-cursos div{
+    margin: 0.3em 0;
+    padding: 0.5em;
+}
+.contenedor-cursos div img{
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 100%;
+    border-radius: 0.5em;
+}
+.a-inscripcion{
+    display: inline-block;
+    border-radius: 0.5em;
+    padding: 0.7em 0.5em;
+    box-sizing: border-box;
+    background-color: #8e7cff;
+    color: #ffff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin:auto;
+    margin-top: 0.5em;
+}
+@media screen and (min-width:48em){
+    #h2{
+        top: 32%;
+        left: 0.4em;
+        font-size: 1.6em;
+        padding: 0.3em 0;
+        width: 50%;
+    }
+    .contenedor-info article{
+        width: calc(50% - 3em);
+    }
+    .contenedor-cursos h3{
+        text-align: left;
+    }
+    .contenedor-info{
+        margin: 0.5em 0;
+        padding: 2em 0;
+    }
+    .contenedor-cursos h2{
+        font-size: 1.4em;
+    }
+}
+@media screen and (min-width: 60em){
+    #h2{
+        top: 80%; 
+        left: 0;
+        padding: 0.6em 0;
+        font-size: 2em;
+        width: 45%;
+    }
+    .contenedor-cursos h2{
+        padding: 0.5em 1.8em;
+        font-size: 1.6em;
+    }
+    .contenedor-cursos{
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-top: 3em;
+        margin-bottom: 7em;
+    }
+    .contenedor-cursos article{
+        width: calc(50% - 2.5em);
+        margin-bottom: 1.5em;
+        /*-----------*/
+        border-radius: 1em;
+        transition: 0.6s;
+    }
+    .contenedor-cursos article:hover{
+        transform: scale(1.0);
+        box-sizing:border-box;
+        box-shadow: 0 0 1.6em 0.5em rgba(227, 207, 207, 0.4);
+        -webkit-box-shadow: 0 0 1.6em 0.5em  rgba(227, 207, 207, 0.4);
+        -moz-box-shadow: 0 0 1.6em 0.5em  hsla(0, 26%, 85%, 0.4);
+    }
+    .contenedor-cursos div{
+        box-sizing: border-box;
+        width: calc(50% - 2em);
+        padding: 0.5em 0.5em;
+    }
+    .contenedor-cursos li a{
+        text-decoration: none;
+        color: #87f;
+        font-weight: bold;
+    }
+    .contenedor-cursos ul{
+        list-style: none;
+    }
+    .contenedor-cursos div img{
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        border-radius: 0.5em;
+    }
+    .a-inscripcion{
+        margin:0.6em 0;
+    }
+    .a-inscripcion:hover{
+        color: #ffffff;
+        background-color: #4e4695;
+    }
+
+}
+

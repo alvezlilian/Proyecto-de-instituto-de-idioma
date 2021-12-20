@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="css/estilos-todos-establecimientos.css">
+    <link rel="stylesheet" href="css/estilo-presentacion.css">
+    <link rel="stylesheet" href="css/estilo-compartido.css">
+    <link rel="stylesheet" href="css/estilo-prueba.css">
+   <link rel="icon" type="image/png" href="img/logo-icono.png">
+   <script src="https://kit.fontawesome.com/2f22cf7961.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="js/funciones-establecimientos.js" type='text/javascript'></script>
+    <script src="js/funciones-menu.js"></script>
+   <title>CALI - Establecimientos</title>
+</head>
+
+<body id="arriba">
+    <!-------------------Seccion del menu fijo------------------------------------------>
+    <div class="header-pf">
+        <header>
+            <a href="index.html" class="logo"></a>
+        </header>
+    
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="active-1">Inicio</a></li>
+                <li><a href="nosotros.html" class="active-2">Nosotros</a></li>
+                <li><a href="establecimientos.html" class="active-3">Establecimientos</a></li>
+                <li><a href="inscripcion.html" class="active-4">Inscripción</a></li>
+                <li><a href="calendario-cursos.html" class="active-5">Calendario</a></li>
+                <li><a href="contacto.html" class="active-6">Contacto</a></li>
+            </ul>
+        </nav>
+         <a class="desplegable"><i class="fas fa-bars" id="boton-desplegable"></i></a>
+    </div>
+    <main>
+        <section id="inicio">
+            <article>
+              <h2>Nuestros establecimientos</h2>
+            </article>
+        </section>
+    <!-------------------------Seccion de los extablecimientos------------------------------------------>
+       
+    <section >
+        <form action="#" method="get" class="contenedor-form">
+            <label for="establecimiento">Filtrar por</label>
+            <select name="filtro-sede" id="sede">
+                <option value="" selected>Establecimiento</option>
+                <option value="1">Buenos Aires</option>
+                <option value="2">Salta</option>
+                <option value="3">Rio Negro</option>
+                <option value="4">Cordoba</option>
+            </select>
+        </form>
+    </section>
+    <section class="contenedor-establecimiento" >
+            <article id="opcion1">
+                <h3>Buenos Aires</h3>
+                <div><img src="img/cede-central1jpg.png" alt=""></div>
+                <p>Direccion:  Murguiondo 2113,Mataderos</p>
+                <p>Provincia: Buenos Aires</p>
+        
+                <h4>Cursos</h4>
+              
+                <ul>
+                    <li><img src="img/inglesa-redonda.png" alt="alemania-bandera"> <span>Inglés</span> </li>
+                    <li><img src="img/alemania-redonda.png" alt="alemania-bandera"> <span>Alemán</span> </li>
+                    <li><img src="img/china-redonda.png" alt="bandera-china" ><span>Chino</span></li>
+                    <li><img src="img/corea-redonda.png" alt="bandera-coreana"> <span>Coreano</span></li>
+                    <li><img src="img/espania-redonda.png" alt="bandera-epaña"> <span>Español</span></li>
+                    <li><img src="img/japon-redonda.png" alt="bandera-japon"> <span>Japonés</span></li>
+                    <li><img src="img/brasil-redonda.png" alt="bandera-potugues"> <span>Portugués</span></li>
+                </ul>
+           
+                <a href="establecimiento-mataderos.html">+info</a>
+                 </article >
+                    <!--------------------SEDE DE SALTA---------------------------------->
+               
+                    <article id="opcion2">
+                   
+                    <h3>Salta </h3>
+                
+                    <div><img src="img/estabecimiento-salta.jpg" alt="sede de salta" ></a></div>
+                <p>Direccion: Cnel. Vidt 342 </p>
+                <p>Provincia: Salta</p>
+                
+               
+                <h4>Cursos</h4>
+                <ul>
+                    <li><img src="img/inglesa-redonda.png" alt="alemania-bandera"> <span>Inglés</span> </li>
+                    <li><img src="img/alemania-redonda.png" alt="alemania-bandera"> <span>Alemán</span> </li>
+                    <li><img src="img/china-redonda.png" alt="bandera-china" ><span>Chino</span></li>
+                    <li><img src="img/corea-redonda.png" alt="bandera-coreana"> <span>Coreano</span></li>
+                    <li><img src="img/espania-redonda.png" alt="bandera-epaña"> <span>Español</span></li>
+                    <li><img src="img/japon-redonda.png" alt="bandera-japon"> <span>Japonés</span></li>
+                    <li><img src="img/brasil-redonda.png" alt="bandera-potugues"> <span>Portugués</span></li>
+                </ul>
+                <a href="establecimiento-salta.html"> + info</a>
+                 </article >
+            </article>
+            <!--------------------SEDE DE RIO NEGRO------------------------------------------------>
+
+                <article id="opcion3">
+                    
+                    <h3>Río Negro</h3>
+                     <div><img src="img/establecimiento-rio-negro.jpg" alt="sede de rio negro" ></div> 
+                     <p>Direccion:Beschtedt 141, San Carlos de Bariloche</p>
+                <p>Provincia: Río Negro</p>
+               
+                <h4>Cursos</h4>
+                <ul>
+                    <li><img src="img/inglesa-redonda.png" alt="alemania-bandera"> <span>Inglés</span> </li>
+                    <li><img src="img/alemania-redonda.png" alt="alemania-bandera"> <span>Alemán</span> </li>
+                    <li><img src="img/china-redonda.png" alt="bandera-china" ><span>Chino</span></li>
+                    <li><img src="img/corea-redonda.png" alt="bandera-coreana"> <span>Coreano</span></li>
+                    <li><img src="img/espania-redonda.png" alt="bandera-epaña"> <span>Español</span></li>
+                    <li><img src="img/japon-redonda.png" alt="bandera-japon"> <span>Japonés</span></li>
+                    <li><img src="img/brasil-redonda.png" alt="bandera-potugues"> <span>Portugués</span></li>
+                </ul>
+                <a href="establecimiento-rio-negro.html"> + info</a>
+            </article>
+               
+                                <!--------------------SEDE DE CORDOBA------------------------------------------------>
+                 <article id="opcion4">
+                    <h3>Córdoba</h3> 
+                  <div>  <img src="img/establecimiento-cordoba.png" alt="sede de cordoba" ></div>
+                  <p>Direccion: Alberti 250, X5105 Villa Allende </p>
+                <p>Provincia: Córdoba</p>
+               
+                <h4>Cursos</h4>
+                <ul>
+                    <li><img src="img/inglesa-redonda.png" alt="alemania-bandera"> <span>Inglés</span> </li>
+                    <li><img src="img/alemania-redonda.png" alt="alemania-bandera"> <span>Alemán</span> </li>
+                    <li><img src="img/china-redonda.png" alt="bandera-china" ><span>Chino</span></li>
+                    <li><img src="img/corea-redonda.png" alt="bandera-coreana"> <span>Coreano</span></li>
+                    <li><img src="img/espania-redonda.png" alt="bandera-epaña"> <span>Español</span></li>
+                    <li><img src="img/japon-redonda.png" alt="bandera-japon"> <span>Japonés</span></li>
+                    <li><img src="img/brasil-redonda.png" alt="bandera-potugues"> <span>Portugués</span></li>
+                </ul>
+                <a href="establecimiento-cordoba.html"> + info</a>
+                </article>
+                <p id="opcion0"></p>
+                
+        </section>
+            <a href="#arriba" class="arriba"></a>
+    </main>
+    <!--------------------------Seccion del footer---------------------------------------------->
+    <footer>
+        <div>
+            <h3>Datos del grupo:</h3>
+                <ul>
+                    <li>Lilian Alvez - 41.539.133</li>
+                    <li>Angeles Gomez - 43.458.345</li>
+                </ul>
+               
+        </div>
+        <div>
+            <h3>Menú inferior:</h3>
+                <ul>
+                    <li><a href="establecimientos.html" target="_blank">Establecimientos</a></li>
+                    <li><a href="inscripcion.html" target="_blank">Inscripción</a></li>
+                    <li><a href="calendario-cursos.html" target="_blank"> Calendario</a></li>
+                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                </ul>
+        </div>
+        <div>
+            <h3>Redes sociales:</h3>
+            <div class="redes">
+            <a href="mailto:cali@alumno.unlam.edu.ar" target="_blank"><i class="far fa-envelope"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-square"></i></a>   
+            </div>
+        </div>
+        <p>@Copyright 2021 v1.0.0</p>
+    </footer>
+</body>
+</html>

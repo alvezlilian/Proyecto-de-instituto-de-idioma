@@ -1,0 +1,202 @@
+:root{
+    --color-sombra: rgba(236, 234, 236, 0.383); 
+    --tamaño-fuente-texto: 0.9em;
+    --tamaño-fuente-titulos: 1.5em;
+}
+
+#inicio{
+    background-image:  linear-gradient(0deg, hsla(300, 36%, 77%, 0.4) 0%, hsla(186, 55%, 74%, 0.4) 80%), url(../img/calendario.jpg);
+}
+.contenedor-form{
+    margin: 5em 0;
+    padding: 0.5em;
+}
+.contenedor-form form{
+    width: 100%;
+    margin: auto;
+}
+.contenedor-form select{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: auto;
+    border: 0.2em solid #87f;
+    border-radius: 0.5em;
+    font-family: 'Nunito', sans-serif; 
+    color: #0631a8;
+    font-size: 0.75em;
+    padding: 0.3em 0; 
+    width: 35%;
+}
+.contenedor-cursos h2{
+    width: 100%;
+    text-align: center;
+    font-size: var(--tamaño-fuente-titulos);
+    padding: 0.2em 1.8em;
+    margin: 0.5em 0;
+}
+.contenedor-cursos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+.contenedor-cursos article{
+    box-sizing: border-box;
+    width: calc(100% - 1.5em);
+    margin-bottom: 1.5em;
+    padding: 1em 0;
+    /*-----------*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+}
+.contenedor-cursos h3{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 0.2em 0;
+}
+.contenedor-cursos li a{
+    text-decoration: none;
+    color: #87f;
+    font-weight: bold;
+}
+.contenedor-cursos ul{
+    list-style: none;
+}
+.contenedor-cursos div{
+    margin: 0.3em 0;
+    padding: 0.5em;
+}
+.contenedor-cursos div img{
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 100%;
+    border-radius: 0.5em;
+}
+.a-inscripcion{
+    display: inline-block;
+    border-radius: 0.5em;
+    padding: 0.7em 0.5em;
+    box-sizing: border-box;
+    background-color: #8e7cff;
+    color: #ffff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin:auto;
+}
+.texto{
+    padding: 4em 0;
+}
+@media screen and (min-width:48em){
+    .contenedor-form select{
+        font-size: var(--tamaño-fuente-texto);
+    }
+    .info{
+        display: block;
+    }
+}
+
+@media screen and (min-width:60em){
+.contenedor-form{
+    margin: 1em 0;
+    padding: 2em;
+}
+.contenedor-form form{
+    width: 90%;
+    margin: auto;
+    text-align: right;
+    padding: 0.6em;
+}
+.contenedor-form select{
+    display: inline-block;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0.3em 0;
+    margin: auto;
+    border: 0.2em solid #87f;
+    border-radius: 0.5em;
+    font-family: 'Nunito', sans-serif; 
+    color: #0631a8;
+    font-size: 1em; 
+}
+.contenedor-cursos h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    padding: 0.2em 1.8em;
+    margin: 0.5em 0;
+}
+.contenedor-cursos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+.contenedor-cursos article{
+    box-sizing: border-box;
+    width: calc(50% - 2.5em);
+    margin-bottom: 1.5em;
+    padding: 1em 0;
+    /*-----------*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+    transition: 0.6s;
+}
+.contenedor-cursos article:hover{
+    transform: scale(1.0);
+    box-sizing:border-box;
+    box-shadow: 0 0 1.6em 0.5em rgba(227, 207, 207, 0.4);
+    -webkit-box-shadow: 0 0 1.6em 0.5em  rgba(227, 207, 207, 0.4);
+    -moz-box-shadow: 0 0 1.6em 0.5em  hsla(0, 26%, 85%, 0.4);
+}
+.contenedor-cursos div{
+    box-sizing: border-box;
+    width: calc(50% - 2em);
+    padding: 0.5em 0.5em;
+    margin: 0;
+}
+.contenedor-cursos li a{
+    text-decoration: none;
+    color: #87f;
+    font-weight: bold;
+}
+.contenedor-cursos ul{
+    list-style: none;
+   
+}
+.contenedor-cursos div img{
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    border-radius: 0.5em;
+}
+.a-inscripcion{
+    display: inline-block;
+    border-radius: 0.5em;
+    padding: 0.7em 0.5em;
+    box-sizing: border-box;
+    background-color: #8e7cff;
+    color: #ffff;
+    font-weight: bold;
+    transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    margin:0.6em 0;
+}
+.a-inscripcion:hover{
+    color: #ffffff;
+    background-color: #4e4695;
+}
+}
+

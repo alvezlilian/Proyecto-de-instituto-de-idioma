@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo-calendario.css">
+        <link rel="stylesheet" href="css/estilo-presentacion.css">
+        <link rel="stylesheet" href="css/estilo-compartido.css">
+        <link rel="stylesheet" href="css/estilo-prueba.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/funciones-menu.js"></script>
+        <script src="js/funciones-calendario.js"></script>
+        <link rel="icon" type="image/png" href="img/logo-icono.png">
+        <script src="https://kit.fontawesome.com/2f22cf7961.js" crossorigin="anonymous"></script>
+        <title>CALI - Calendario de cursos</title>
+    </head>
+
+    <body id="arriba">
+        <div class="header-pf">
+            <header>
+                <a href="index.html" class="logo"></a>
+            </header>
+        
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="active-1">Inicio</a></li>
+                    <li><a href="nosotros.html" class="active-2">Nosotros</a></li>
+                    <li><a href="establecimientos.html" class="active-3">Establecimientos</a></li>
+                    <li><a href="inscripcion.html" class="active-4">Inscripción</a></li>
+                    <li><a href="calendario-cursos.html" class="active-5">Calendario</a></li>
+                    <li><a href="contacto.html" class="active-6">Contacto</a></li>
+                </ul>
+            </nav>
+            <a class="desplegable"><i class="fas fa-bars" id="boton-desplegable"></i></a>
+        </div>
+    <main>
+        <section id="inicio">
+            <article>
+                <h2>Calendario de cursos</h2>
+            </article>
+        </section>
+
+        <section class="contenedor-form">
+            <article>
+                <form action="#" method="GET">
+                    <label for="sede">Filtrar por</label>
+                    <select name="filtro-sede" id="sede">
+                        <option value="" selected>Establecimiento</option>
+                        <option value="instituto1">Instituto Mataderos</option>
+                        <option value="instituto2">Instituto Milenio</option>
+                        <option value="instituto3">Instituto D.Alighieri</option>
+                        <option value="instituto4">Instituto Güemes</option>
+                    </select>
+                    <label for="idioma"></label>
+                    <select name="filtro-idioma" id="idioma">
+                        <option value="" selelcted>Idioma</option>
+                        <option value="aleman">Alemán</option>
+                        <option value="chino">Chino</option>
+                        <option value="coreano">Coreano</option>
+                        <option value="español">Español</option>
+                        <option value="ingles">Inglés</option>
+                        <option value="japones">Japonés</option>
+                        <option value="portugues">Portugués</option>
+                    </select>
+                </form>
+            </article>
+        </section>
+
+        <section class="contenedor-cursos">
+            <h2 class="titulo">Octubre</h2>
+            <p class="texto">Seleccione un nuevo curso para filtrar</p>
+            <article class="instituto1 coreano">
+                <h3>Coreano - Nivel 1</h3>
+                <div>
+                    <img src="img/corea-bandera.png" alt="bandera-coreana">
+                </div>
+              
+                <div id="curso-1">
+                    <ul>
+                        <li>Modalidad: Semipresencial</li>
+                        <li>Días:Lunes y miércoles</li>
+                        <li>Horarios:14:00hs a 16:00hs</li>
+                        <li>Fecha de inicio: 6 de octubre</li>
+                        <li>Sede:<a href="establecimiento-mataderos.html" target="_blank">Buenos Aires</a></li>
+                        <li>Precio: $5000</li>
+                    </ul>
+                    <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                   
+                </div>
+            </article> 
+            <article class="instituto4 ingles">
+                <h3>Inglés - Nivel 1</h3>
+                <div>
+                    <img src="img/ingles-uk-bandera.png" alt="bandera-inglaterra">
+                </div>
+
+                
+                <div id="curso-2">
+                    <ul>
+                        <li>Modalidad: Semipresencial</li>
+                        <li>Días:Martes y jueves</li>
+                        <li>Horarios:20:00hs a 22:00hs</li>
+                        <li>Fecha de inicio: 6 de octubre</li>
+                        <li>Sede:<a href="establecimiento-salta.html" target="_blank">Salta</a></li>
+                        <li>Precio: $5000</li>
+                    </ul>
+                    <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                   
+                </div>
+               
+            </article>
+            <article class="instituto1 español">
+                <h3>Español - Nivel 2</h3>
+                <div>
+                    <img src="img/espania-bandera.png" alt="bandera-españa">
+                </div>
+                
+               
+                <div id="curso-3"> 
+                    <ul>
+                        <li>Modalidad: Semipresencial</li>
+                        <li>Días:Lunes y miércoles</li>
+                        <li>Horarios:19:00hs a 21:00hs</li>
+                        <li>Fecha de inicio: 6 de octubre</li>
+                        <li>Sede:<a href="establecimiento-mataderos.html" target="_blank">Buenos Aires</a></li>
+                        <li>Precio: $5000</li>
+                    </ul>
+                    <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                   
+                </div>
+            </article>
+            <article class="instituto3 chino">
+                <h3>Chino - Nivel 1</h3>
+                <div>
+                    <img src="img/china-bandera.png" alt="bandera-china">
+                </div>
+            
+               
+                <div id="curso-4">
+                    <ul>
+                        <li>Modalidad: Semipresencial</li>
+                        <li>Días:Lunes y miércoles</li>
+                        <li>Horarios:16:00hs a 18:00hs</li>
+                        <li>Fecha de inicio: 6 de octubre</li>
+                        <li>Sede:<a href="establecimiento-rio-negro.html" target="_blank">Río Negro</a></li>
+                        <li>Precio: $5000</li>
+                    </ul>
+                    <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                   
+                </div>
+            </article>
+        </section>
+    
+        <section class="contenedor-cursos">
+            <h2 class="titulo">Noviembre</h2>
+           
+            <article class="instituto2 portugues">
+                <h3>Portugués - Nivel 1</h3>
+                <div>
+                    <img src="img/brasil-bandera.png" alt="bandera-brasil">
+                </div>
+                
+               
+                <div id="curso-5">
+                    <ul>
+                        <li>Modalidad: Semipresencial</li>
+                        <li>Días:Lunes y miércoles</li>
+                        <li>Horarios:14:00hs a 16:00hs</li>
+                        <li>Fecha de inicio: 6 de octubre</li>
+                        <li>Sede:<a href="establecimiento-cordoba.html" target="_blank">Córdoba</a></li>
+                        <li>Precio: $5000</li>
+                    </ul>
+                    <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    
+                </div>
+            </article>
+            <article class="instituto4 ingles">
+                <h3>Inglés - Nivel 2</h3>
+                <div>
+                    <img src="img/ingles-uk-bandera.png" alt="bandera-inglaterra">
+                </div>
+                
+                
+                <div id="curso-6">
+                    <ul>
+                        <li>Modalidad: Semipresencial</li>
+                        <li>Días:Martes y jueves</li>
+                        <li>Horarios:20:00hs a 22:00hs</li>
+                        <li>Fecha de inicio: 6 de octubre</li>
+                        <li>Sede:<a href="establecimiento-salta.html" target="_blank">Salta</a></li>
+                        <li>Precio: $5000</li>
+                    </ul>
+                    <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    
+                </div>
+            </article>
+            <article class="instituto1 español">
+                <h3>Español - Nivel 3</h3>
+                <div>
+                    <img src="img/españa-bandera.png" alt="bandera-españa">
+                </div>
+                
+               
+                <div id="curso-7">
+                    <ul>
+                        <li>Modalidad: Semipresencial</li>
+                        <li>Días:Lunes y miércoles</li>
+                        <li>Horarios:19:00hs a 21:00hs</li>
+                        <li>Fecha de inicio: 6 de octubre</li>
+                        <li>Sede:<a href="establecimiento-mataderos.html" target="_blank">Buenos Aires</a></li>
+                        <li>Precio: $5000</li>
+                    </ul>
+                    <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    
+                </div>
+            </article>
+            <article class="instituto2 aleman">
+                <h3>Alemán - Nivel 1</h3>
+                <div>
+                    <img src="img/alemania-bandera.png" alt="bandera-alemania">
+                </div>
+                 
+               
+                <div id="curso-8">
+                    <ul>
+                        <li>Modalidad: Semipresencial</li>
+                        <li>Días:Lunes y miércoles</li>
+                        <li>Horarios:16:00hs a 18:00hs</li>
+                        <li>Fecha de inicio: 6 de octubre</li>
+                        <li>Sede:<a href="establecimiento-cordoba.html" target="_blank">Córdoba</a></li>
+                        <li>Precio: $5000</li>
+                    </ul>
+                    <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    
+                </div>
+            </article>
+
+            <article class="instituto1 aleman">
+                <h3>Aleman - Nivel 1</h3>
+                <div>
+                    <img src="img/alemania-bandera.png" alt="bandera-alemania">
+                </div>
+
+              
+                <div id="curso-1">
+                    <ul>
+                        <li>Modalidad: Semipresencial</li>
+                        <li>Días:Lunes y miércoles</li>
+                        <li>Horarios:14:00hs a 16:00hs</li>
+                        <li>Fecha de inicio: 6 de octubre</li>
+                        <li>Sede:<a href="establecimiento-mataderos.html" target="_blank">Buenos Aires</a></li>
+                        <li>Precio: $5000</li>
+                    </ul>
+                    <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    
+                </div>
+            </article> 
+            <article class="instituto1 aleman">
+                <h3>Aleman - Nivel 2</h3>
+                <div>
+                    <img src="img/alemania-bandera.png" alt="bandera-alemania">
+                </div>
+                
+              
+                <div id="curso-1">
+                    <ul>
+                        <li>Modalidad: Semipresencial</li>
+                        <li>Días:Lunes y miércoles</li>
+                        <li>Horarios:14:00hs a 16:00hs</li>
+                        <li>Fecha de inicio: 6 de octubre</li>
+                        <li>Sede:<a href="establecimiento-mataderos.html" target="_blank">Buenos Aires</a></li>
+                        <li>Precio: $5000</li>
+                    </ul>
+                    <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                   
+                </div>
+            </article> 
+        </section>
+        <a href="#arriba" class="arriba"></a>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Datos del grupo:</h3>
+                <ul>
+                    <li>Lilian Alvez - 41.539.133</li>
+                    <li>Angeles Gomez - 43.458.345</li>
+                </ul>
+        
+        </div>
+        <div>
+            <h3>Menú inferior:</h3>
+                <ul>
+                    <li><a href="establecimientos.html" target="_blank">Establecimientos</a></li>
+                    <li><a href="inscripcion.html" target="_blank">Inscripción</a></li>
+                    <li><a href="calendario-cursos.html" target="_blank"> Calendario</a></li>
+                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                </ul>
+        </div>
+        <div>
+            <h3>Redes sociales:</h3>
+            <div class="redes">
+                <a href="mailto:cali@alumno.unlam.edu.ar" target="_blank"><i class="far fa-envelope"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-square"></i></a>   
+            </div>
+        </div>
+        <p>@Copyright 2021 v1.0.0</p> 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo-compartido.css">
+        <link rel="stylesheet" href="css/estilo-prueba.css">
+        <link rel="stylesheet" href="css/estilo-inscripcion.css">
+        <link rel="stylesheet" href="css/estilo-presentacion.css">
+        <link rel="icon" type="image/png" href="img/logo-icono.png">
+        <script src="https://kit.fontawesome.com/2f22cf7961.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/funciones-menu.js"></script>
+        <script src="js/funciones-inscripcion.js"></script>
+        <title>CALI - Inscripción</title>
+    </head>
+    <body id="arriba">
+        <div class="header-pf">
+            <header>
+                <a href="index.html" class="logo"></a>
+            </header>
+        
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="active-1">Inicio</a></li>
+                    <li><a href="nosotros.html" class="active-2">Nosotros</a></li>
+                    <li><a href="establecimientos.html" class="active-3">Establecimientos</a></li>
+                    <li><a href="inscripcion.html" class="active-4">Inscripción</a></li>
+                    <li><a href="calendario-cursos.html" class="active-5">Calendario</a></li>
+                    <li><a href="contacto.html" class="active-6">Contacto</a></li>
+                </ul>
+            </nav>
+             <a class="desplegable"><i class="fas fa-bars" id="boton-desplegable"></i></a>
+        </div>
+     <main>
+        <section id="inicio">
+            <article>
+                <h2>Inscripción</h2>
+            </article>
+        </section>
+
+         <section class="contenedor-article">
+         <article id="contenedorInfo">  <p > Usted se está por inscribir al curso de  <span id="dato3"></span> en la sede de <span id="dato1"></span>, en el <span id="dato2"></span>.<br>En el horacio de <span id="dato4"></span>.<br>El valor de la cuota es de 5000$.</p>
+           </article> 
+           <article>
+                <div class="contenedor-img">
+                    <img src="img/inscripcion-img.png" alt="inscripcion-persona">
+                </div>
+             </article> 
+             <article>
+                <form action="#" method="POST" id="form">
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" id="nombre" autofocus placeholder="Nombre">
+                    <br>
+                    <div id="mensaje1" class="error"></div>
+                    <br>
+                    <label for="apellido"></label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    <br>
+                    <div id="mensaje2" class="error"></div>
+                    <br>
+                    <label for="telefono"></label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                    <br>
+                    <div id="mensaje3" class="error"></div>
+                    <br>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <br>
+                    <div id="mensaje4" class="error"></div>
+                    <br>
+                    <label for="provincia"></label>
+                    <input type="text" name="provincia" id="provincia" placeholder="Provincia">
+                    <br>
+                    <div id="mensaje5" class="error"></div>
+                    <br>
+                    <label for="ciudad"></label>
+                    <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+                    <br>
+                    <div id="mensaje6" class="error"></div>
+                    <br>
+                    <input type="submit" value="Inscribite" class="boton">
+                </form>
+             </article>
+         </section>
+         <a href="#arriba" class="arriba"></a>
+     </main>
+
+     <footer>
+        <div>
+            <h3>Datos del grupo:</h3>
+                <ul>
+                    <li>Lilian Alvez - 41.539.133</li>
+                    <li>Angeles Gomez - 43.458.345</li>
+                </ul>
+        </div>
+        <div>
+            <h3>Menú inferior:</h3>
+                <ul>
+                    <li><a href="establecimientos.html" target="_blank">Establecimientos</a></li>
+                    <li><a href="inscripcion.html" target="_blank">Inscripción</a></li>
+                    <li><a href="calendario-cursos.html" target="_blank"> Calendario</a></li>
+                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                </ul>
+        </div>
+        <div>
+            <h3>Redes sociales:</h3>
+            <div class="redes">
+            <a href="mailto:cali@alumno.unlam.edu.ar" target="_blank"><i class="far fa-envelope"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-square"></i></a>   
+            </div>
+        </div>
+        <p>@Copyright 2021 v1.0.0</p>
+    </footer>
+</body>
+</html>

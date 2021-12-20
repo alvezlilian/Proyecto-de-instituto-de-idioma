@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+:root{
+    --color-pricipal: hsla(246, 37%, 30%, 0.8);
+    --color-traslucido: rgba(255,255,255,0.7);
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif; 
+}
+
+/* ========== Nivo direction -> FLECHAS DE LOS COSTADOS ==========*/
+.nivo-directionNav a{
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+
+.nivo-directionNav .nivo-prevNav{
+	background-image: url(../img/icons/circle-left.png);
+	background-size: cover;
+	text-indent: -9999px;
+	left: 32px;
+}
+
+.nivo-directionNav .nivo-nextNav{
+	background-image: url(../img/icons/circle-right.png);
+	background-size: cover;
+	text-indent: -9999px;
+	right: 32px;
+}
+/*-------- Redonditos de abajo del slider --------*/
+.theme-mi-slider .nivo-control{
+	display: none;
+}
+/*Nivo Caption*/
+.nivo-html-caption{
+	position: absolute;
+}
+/*Texto dentro del slider*/
+.titulo-slider{
+	display: none;
+}
+.texto-slider, .texto-slider a{
+	display: none;
+}
+.texto-mobile{
+	/*background-color: var(--color-traslucido);*/
+	width: 100%;
+	position: absolute;
+	bottom: 1em;
+	left: 0;
+	font-size: 1.4em;
+	text-align: center;
+	background-color: var(--color-traslucido);
+	box-sizing: border-box;
+	/*font-weight: normal;*/
+}
+.texto-mobile a{
+	text-decoration: none;
+	color: var(--color-pricipal);	
+}
+
+@media screen and (min-width: 48em){
+	.texto-mobile{
+	width: 100%;
+	font-size: 2em;
+	bottom: 2em;
+	padding: 0.3em 0;
+	}
+.theme-mi-slider .nivoSlider{
+	position:relative;
+}
+
+.theme-mi-slider .nivoSlider a {
+	border:0;
+	display:block;
+}
+/* ========== Nivo direction -> FLECHAS DE LOS COSTADOS ==========*/
+.nivo-directionNav a{
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.nivo-directionNav .nivo-prevNav{
+	background-image: url(../img/icons/circle-left.png);
+	background-size: cover;
+	text-indent: -9999px;
+	left: 32px;
+}
+
+.nivo-directionNav .nivo-nextNav{
+	background-image: url(../img/icons/circle-right.png);
+	background-size: cover;
+	text-indent: -9999px;
+	right: 32px;
+}
+/* ============= Nivo Pagination -> círculos de abajo ==============*/
+.nivo-controlNav{
+	display: flex;
+	justify-content: center;
+}
+
+.theme-mi-slider .nivo-control{
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: rgb(245, 195, 255);
+	margin: 3px;
+	text-indent: -9999px
+}
+
+.theme-mi-slider .nivo-control:hover{
+	background: #363068;
+}
+
+.theme-mi-slider .active{
+	background: #363068;
+}
+}
+@media screen and (min-width: 60em){
+.texto-mobile{
+	display: none;
+}
+.titulo-slider{
+	display: block;
+	text-align: center;
+	position: absolute;
+	box-sizing: border-box;
+	padding: 0.4em;
+	width: 100%;
+	left: 0; /*1.3em*/
+	top: 2em;
+	font-size: 2em;
+	background-color: var(--color-traslucido);
+	color: var(--color-pricipal);
+}
+.texto-slider{
+	display: block;
+	text-align: left;
+	position: absolute;
+	box-sizing: border-box;
+	padding: 0.5em;
+	width: 35%;
+	left: 0; /*2em*/
+	bottom: 7.8em;
+	background-color: var(--color-pricipal);
+}
+.texto-slider a{ 
+	display: block;
+	padding: 0.5em 0.5em;
+	font-size: 1.2em;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 2em;
+ }
+}

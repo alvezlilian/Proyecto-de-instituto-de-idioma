@@ -1,0 +1,298 @@
+.contenedor-article-pasos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom:2.5em;
+}
+.contenedor-article-pasos article{
+    width: calc(80% - 2em);
+    box-sizing: border-box;
+    border-radius: 1em;
+    padding: 2.2em 2em;
+    margin:1em 0;
+    box-shadow: 0px 7px 10px 5px rgba(227, 207, 207, 0.7);
+    -webkit-box-shadow: 0px 7px 10px 5px rgba(227, 207, 207, 0.7);
+    -moz-box-shadow: 0px 7px 10px 5px rgba(227, 207, 207, 0.7);
+} 
+.contenedor-article-pasos i{
+    font-size: 2.5em;
+    color: #002ca3; 
+}
+.contenedor-article-pasos h3{
+    margin-top: 0.4em;
+    font-size: 1.2em;
+    text-align: center;
+}
+.contenedor-article-pasos p{
+    box-sizing: border-box;
+    margin-top: 0.4em;
+    font-size: 1em;
+    text-align: center;
+}
+.contenedor-article-pasos div{
+    width: 15%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.contenedor-form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    background: radial-gradient(circle,rgba(239, 200, 255, 0.5),rgb(239, 200, 255, 0.5)); 
+}
+.contenedor-form h2{
+        width: 100%;
+        text-align: center;
+        padding: 0.5em 0;
+        margin: 0.2em 0;
+        font-size: 1.6em;
+}
+.contenedor-form article{
+    width: calc(100% - 2em);
+    box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+.contenedor-form ul{
+    margin: 1em 0;
+}
+.contenedor-form li{
+    list-style: none;
+    margin:0.5em 0;
+    font-size: 1em;
+}
+label{
+    display: inline-block;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 0.2em 0;
+    margin-bottom: 0.4em;
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+select{
+    display: inline-block;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 0.3em 0;
+    margin: auto;
+    border: 0.2em solid #87f;
+    border-radius: 0.5em;
+    background: transparent;
+}
+.output{
+    display: block;
+    border: 0.2em solid #87f;
+    border-radius: 0.5em;
+    padding: 0.4em 0.5em;
+    background: transparent;
+    margin-bottom: 1em;
+    box-sizing: border-box; 
+    width: 30%;
+}
+.output p{
+    text-align: center;
+}
+.boton{
+    display:block;
+    border: 0.2em solid rgb(142, 124, 255);
+    border-radius: 0.5em;
+    padding: 0.6em 2em;
+    box-sizing: border-box;
+    background-color: rgb(142, 124, 255);
+    color: #ffff;
+    font-weight: bold;
+    width: 50%;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1.5em;
+    margin: left;
+}
+.boton:hover{
+    border: 0.2em solid #4e4695;
+    color: #ffffff;
+    background-color: #4e4695;
+}
+select, input{
+    font-family: 'Nunito', sans-serif; 
+    color: #0631a8;
+    font-size: 1em; 
+}
+.precio{
+    margin-top: 1em;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+@media screen and (min-width:48em){
+    .contenedor-article-pasos{
+        margin:2em 0;
+    }
+    .contenedor-article-pasos article{
+        width: calc(33.3% - 2em);
+        box-sizing: border-box;
+        border-radius: 1em;
+        padding: 2.5em 1.2em;
+        margin-top: 2em;
+        margin-bottom:2em;
+        box-shadow: 0px 7px 11px 5px rgba(227, 207, 207, 0.6);
+        -webkit-box-shadow: 0px 7px 11px 5px rgba(227, 207, 207, 0.6);
+        -moz-box-shadow: 0px 7px 11px 5px rgba(227, 207, 207, 0.6);
+    } 
+    .contenedor-form{
+        justify-content: space-around;
+        margin-top: 4em;
+        margin-bottom: 0.5em;  
+    }
+    .contenedor-form article{
+        box-sizing: border-box;
+        width: calc(50% - 5em);
+        margin-top: 1.3em;
+        margin-bottom: 3em;
+        padding: 0 2em;
+    }
+    .output{
+        padding: 0.4em 0.3em;
+        width: 27%;
+     
+    }
+    .precio{
+        margin-top: 1em;
+        font-size: 1.1em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media screen and (min-width:60em){
+    .contenedor-article-pasos{
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin:2em 0;
+    }
+    .contenedor-article-pasos article{
+        width: calc(33.3% - 5em);
+        box-sizing: border-box;
+        border-radius: 1.3em;
+        padding: 2.5em 2em;
+        margin:2em 0;
+        transition: 1s;
+        box-shadow: 0px 7px 11px 5px rgba(227, 207, 207, 0.749);
+        -webkit-box-shadow: 0px 7px 11px 5px #e3cfcfbf;
+        -moz-box-shadow: 0px 7px 11px 5px #e3cfcfbf;
+    } 
+    .contenedor-article-pasos i{
+        font-size: 3.2em;
+    }
+    .contenedor-article-pasos h3{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .contenedor-article-pasos p{
+        box-sizing: border-box;
+        margin-top: 0.5em;
+        font-size: 1.2em;
+    }
+    .contenedor-article-pasos div{
+        width: 15%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .contenedor-form{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 4em;
+        margin-bottom: 0.5em;
+    }
+    .contenedor-form h2{
+        width: 100%;
+        text-align: center;
+        padding: 0.5em 0;
+        margin: 1em 0;
+        font-size: 2em;
+    }
+    .contenedor-form article{
+        box-sizing: border-box;
+        width: calc(50% - 5em);
+        margin-top: 1.5em;
+        margin-bottom: 3em;
+        padding: 0 2em;
+    }
+    .contenedor-form ul{
+        margin: 1.5em 0;
+    }
+    .contenedor-form li{
+        list-style: none;
+        margin:0.7em 0;
+        font-size: 1.1em;
+    }
+    label{
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.2em 0;
+        margin-bottom: 0.4em;
+        margin-top: 1em;
+        font-size: 1.1em;
+    }
+    select{
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.3em 0;
+        margin: auto;
+        border: 0.2em solid #87f;
+        border-radius: 0.5em;
+        background: transparent;
+    }
+    .output{
+    
+        border: 0.2em solid #87f;
+        border-radius: 0.5em;
+        padding: 0.3em 3em;
+        background: transparent;
+        margin-bottom: 3em;
+        box-sizing: border-box; 
+        width: 9em
+    }
+    .boton{
+        display:block;
+        border: 0.2em solid rgb(142, 124, 255);
+        border-radius: 0.5em;
+        padding: 0.8em 2.5em;
+        box-sizing: border-box;
+        background-color: rgb(142, 124, 255);
+        font-weight: bold;
+        transition: 0.5s;
+        width: 50%;
+        font-size: 1.1em;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 1.5em;
+        margin: auto;
+    }
+    .boton:hover{
+        transform: scale(1.1);
+        border: 0.2em solid #4e4695;
+    }
+    select, input{
+        font-size: 1em; 
+    }
+    .precio{
+        margin-top: 1em;
+        font-size: 1.1em;
+    }
+    .separar{
+        margin-top: 3em;
+    }
+    
+}

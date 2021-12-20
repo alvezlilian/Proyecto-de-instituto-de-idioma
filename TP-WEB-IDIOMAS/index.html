@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/estilo-compartido.css">
+    <link rel="stylesheet" href="css/estilo-prueba.css">
+    <link rel="stylesheet" href="css/estilo-inicio.css">
+    <link rel="icon" type="image/png" href="img/logo-icono.png">
+   
+    <script src="https://kit.fontawesome.com/2f22cf7961.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/funciones-index.js" type='text/javascript'></script>
+    <script src="js/funciones-menu.js"></script>
+    <!------------------- SLIDER -------------------->
+    <link rel="stylesheet" href="css/nivo-slider.css">
+    <link rel="stylesheet" href="css/mi-slider.css">
+   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nivo.slider.js"></script>
+   
+    <title>CALI - Instituto de Idiomas</title>
+</head>
+<body id="arriba">
+    <div class="header-pf">
+    <header>
+        <a href="index.html" class="logo"></a>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html" class="active-1">Inicio</a></li>
+            <li><a href="nosotros.html" class="active-2">Nosotros</a></li>
+            <li><a href="establecimientos.html" class="active-3">Establecimientos</a></li>
+            <li><a href="inscripcion.html" class="active-4">Inscripción</a></li>
+            <li><a href="calendario-cursos.html" class="active-5">Calendario</a></li>
+            <li><a href="contacto.html" class="active-6">Contacto</a></li>
+        </ul>
+    </nav>
+     <a class="desplegable"><i class="fas fa-bars" id="boton-desplegable"></i></a>
+     </div>
+    <main>
+        <!------------------- SLIDER ------------------->
+        <div class="slider-wrapper theme-mi-slider">
+        <div id="slider" class="nivoSlider">     
+            <img src="img/1.jpg" alt="" title="#htmlcaption1" />    
+            <img src="img/2.jpeg" alt="" title="#htmlcaption2" />    
+            <img src="img/3.jpg" alt="" title="#htmlcaption3" />     
+        </div> 
+        <div id="htmlcaption1" class="nivo-html-caption">     
+            <h2 class="titulo-slider">Instituto CALI</h1>
+            <p class="texto-slider"><a href="nosotros.html">Conocé más sobre nosotros</a></p>
+            <h2 class="texto-mobile"><a href="nosotros.html">Instituto CALI</a></h2>
+        </div>
+        <div id="htmlcaption2" class="nivo-html-caption">     
+            <h2 class="titulo-slider">Aprendamos juntos</h1>
+                <p class="texto-slider"><a href="establecimientos.html">Enterate de las modalidadees que ofrecemos</a></p>
+                <h2 class="texto-mobile"><a href="establecimientos.html">Aprendamos juntos</a></h2>
+        </div>
+        <div id="htmlcaption3" class="nivo-html-caption">     
+            <h2 class="titulo-slider">Inscripciones abiertas</h1>
+                <p class="texto-slider"><a href="#form">Nuevas vacantes disponibles. Click acá</a></p>
+                <h2 class="texto-mobile"><a href="#form">Inscripciones abiertas</a></h2>
+        </div>
+        </div>
+    <!--------------------------- FIN SLIDER ---------------------------->
+
+        <section class="contenedor-article-pasos">
+            <article>
+            <div>
+               <a href="establecimientos.html"><i class="far fa-building"></i></a>
+            </div> 
+            <h3>Paso 1</h3>
+                <p>Buscá tu sede más cercana.</p> 
+            </article>
+
+            <article>
+                <div>
+                    <a href="#"><i class="far fa-check-square"></i></a>
+                </div>
+                <h3>Paso 2</h3>
+                <p>Seleccioná el curso.</p> 
+            </article>
+
+            <article>
+                <div>
+                   <a href="inscripcion.html"><i class="far fa-edit"></i></a>
+                </div>
+                <h3>Paso 3</h3>
+                <p>¡Inscribite!</p> 
+            </article>
+        </section> 
+
+        <section class="contenedor-form" id="form">
+            <h2>Buscá el curso e inscribite</h2>
+            <article>
+              
+                <form action="#" method="POST">
+                    <label for="provincia">Seleccioná la provincia:</label>
+                    <select name="filtro-provincia" id="provincia">
+                        <option value=""></option>
+                        <option value="BuenosAires">Buenos Aires</option>
+                        <option value="Cordoba">Córdoba</option>
+                        <option value="RioNegro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                    </select>
+                </form>
+                <div id="info-curso">
+            </article>
+            
+            <article>
+                <form action="inscripcion.html" method="POST">
+                    <label for="establecimiento">Seleccioná el establecimiento:</label>
+                    <select name="filtro-sede" id="establecimiento">
+                        <option value=""></option>
+                    </select>
+                    <br>
+                    <label for="idioma">Idiomas:</label>
+                    <select name="filtro-idioma" id="idioma">
+                        <option value=""></option>
+                        <option value="Alemán">Alemán</option>
+                        <option value="Chino">Chino</option>
+                        <option value="Coreano">Coreano</option>
+                        <option value="Español">Español</option>
+                        <option value="Inglés">Inglés</option>
+                        <option value="Japonés">Japonés</option>
+                        <option value="Portugués">Portugués</option>
+                    </select>
+                    <br>
+                    <label for="hora-mod">Horarios y modalidad:</label>
+                    <select name="hora-mod" id="hora-mod">
+                        <option value=""></option>
+                        <option value="14:00hs a 16:00hs-Semipresencial">14:00hs a 16:00hs-Semipresencial</option>
+                        <option value="16:00hs a 18:00hs-Semipresencial">16:00hs a 18:00hs-Semipresencial</option>
+                        <option value="17:00hs a 19:00hs-Semipresencia">17:00hs a 19:00hs-Semipresencial</option>
+                        <option value="18:00hs a 20:00hs-Semipresencial">18:00hs a 20:00hs-Semipresencial</option>
+                        <option value="19:00hs a 21:00hs-Semipresencial">19:00hs a 21:00hs-Semipresencial</option>
+                        <option value="20:00hs a 22:00hs-Semipresencial">20:00hs a 22:00hs-Semipresencial</option>
+                    </select>
+                    <div id="contenedor-precio">
+                        <p class="precio">Precio</p>  
+                        <section class=" output"></section>
+                    </div>
+                    <a href="inscripcion.html" class="boton">Inscribirse</a>
+                </form>
+            </article>
+        </section>
+        <a href="#arriba" class="arriba"></a>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Datos del grupo:</h3>
+                <ul>
+                    <li>Lilian Alvez - 41.539.133</li>
+                    <li>Angeles Gomez - 43.458.345</li>
+                </ul>
+        
+        </div>
+        <div>
+            <h3>Menú inferior:</h3>
+                <ul>
+                    <li><a href="establecimientos.html" target="_blank">Establecimientos</a></li>
+                    <li><a href="inscripcion.html" target="_blank">Inscripción</a></li>
+                    <li><a href="calendario-cursos.html" target="_blank"> Calendario</a></li>
+                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                </ul>
+        </div>
+        <div>
+            <h3>Redes sociales:</h3>
+            <div class="redes">
+                <a href="mailto:cali@alumno.unlam.edu.ar" target="_blank"><i class="far fa-envelope"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-square"></i></a>   
+            </div>
+        </div>
+        <p>@Copyright 2021 v1.0.0</p>
+    </footer>
+</body>
+</html>

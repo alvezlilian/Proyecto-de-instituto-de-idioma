@@ -1,0 +1,123 @@
+#inicio{
+    background-image:  linear-gradient(0deg, hsla(300, 36%, 77%, 0.4) 0%, hsla(186, 55%, 74%, 0.4) 80%), url(../img/inscripcion.jpg);
+}
+/*Para el texto cuando aparece un error*/
+.contenedor-article p{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.5em 0;
+}
+/*Para el que muestra los datos desde el local storage*/
+#info-ls{
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+.contenedor-img{
+    display: none;
+}
+form{
+    text-align: center; 
+    padding: 1em;
+}
+input{
+    font-size: 1.1em;
+    padding: 0.3em;
+	margin: 0.3em 0;
+	border: none;
+	border-bottom: 0.2em solid #87f;
+	background: transparent;
+	color: #0631a8;
+    transition: 0.7s;
+}
+.boton{
+    border: 0.2em solid rgb(142, 124, 255);
+    border-radius: 0.5em;
+    transition: 0.5s;
+    padding: 0.8em 2.5em;
+    background-color: rgb(142, 124, 255);
+    color: #ffff;
+    font-weight: bold;
+}
+.boton:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 1.2em 0.6em rgba(216, 210, 255, 0.2);
+    -webkit-box-shadow:  0 0 1.2em 0.6em rgba(216, 210, 255, 0.2);
+    -moz-box-shadow:  0 0 1.2em 0.6em rgba(216, 210, 255, 0.2);
+    border: 0.2em solid #4e4695;
+    color: #ffffff;
+    background-color: #4e4695;
+}
+.contenedor-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 1.5em 0;
+}
+.contenedor-article article{
+    box-sizing: border-box;
+    margin-bottom: 2em;
+}
+.error{
+    color: rgb(255, 0, 0);
+}
+@media screen and (min-width:48em){
+    .contenedor-img{
+        display: block;
+        box-sizing: border-box;
+        padding: 3em;
+    }
+    .contenedor-img img{
+        max-width: 100%;
+    }
+    .contenedor-article{
+        justify-content: space-around;
+    }
+    .contenedor-article article{
+        width: calc(50% - 0.5em);
+    }
+    h2{ 
+        width: 100%;
+    }
+    #info-texto{
+        font-size: 1.1em;
+        width: 80%;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+    form{
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width:60em){
+    .contenedor-article{
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .contenedor-article article{
+        width: calc(50% - 5em); 
+        margin-bottom: 3em;
+    }
+    form{ 
+        width: 60%;
+        margin: auto;
+        margin-top: 2em;
+    }
+    .contenedor-img{
+        padding: 5.5em;
+    }
+    #info-texto{
+        width: 60%;
+        padding: 0.5em 0.5em;
+        border-radius: 1em;
+        box-shadow: 0px 0px 20px 7px rgba(227, 207, 207, 0.3);
+        -webkit-box-shadow: 0px 0px 20px 7px rgba(227, 207, 207, 0.3);
+        -moz-box-shadow: 0px 0px 20px 7px rgba(227, 207, 207, 0.3);
+    }
+    #info-ls{
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,38 @@
+#inicio{
+padding: 80px;
+margin: auto;
+background-size: cover; 
+background-position: top;
+box-sizing: border-box;
+position: relative;
+}
+#inicio h2{
+position: absolute;
+text-align: center;
+box-sizing: border-box;
+width: 100%;
+color: #363068;
+background-color: rgba(255,255,255,0.7);
+bottom: 32px;
+left: 0;
+font-size: 20px;
+padding: 7px;
+}
+
+@media screen and (min-width: 48em){
+    #inicio{
+    padding: 100px;
+    }
+    #inicio h2{
+    font-size: 30px;
+    padding: 10px;
+    }
+}
+@media screen and (min-width: 60em){
+    #inicio{
+    padding: 150px;
+    }
+    #inicio h2{
+    padding: 13px;
+    }
+}
